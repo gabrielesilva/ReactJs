@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Step1 from './step1/Step1';
 import Step2 from './step2/Step2';
+imports Congrats from './congrats';
 export default class Signup extends Component {
     constructor(props) {
         super(props);
@@ -11,13 +12,13 @@ export default class Signup extends Component {
 
         }
     }
-
+// Decide qual página vai ser retornada
     handlePage = () => {
         switch (this.state.actualPage) {
             case 1:
                 return <Step2 change={this.changePage} />
             case 2:
-                return <h1> Página 03</h1>
+                return <Congrats name={this.state.info[0].name}/>
             default:
                 return <Step1  change={this.changePage}/>
         }

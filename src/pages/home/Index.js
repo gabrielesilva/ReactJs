@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar'
-export default class Index extends Component{
-    render(){
+import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
+export default class Index extends Component {
+    render() {
         return (
-        <div className="geral mainBackground">
-            <Navbar/>
-        <section>
-            <span>A conta Banco Digital te dá acesso a um novo patamar de produtos e serviços bancários. Bem vindo ao
+            <div className="geral mainBackground">
+                <Navbar />
+                <section>
+                    <span>A conta Banco Digital te dá acesso a um novo patamar de produtos e serviços bancários. Bem vindo ao
                 futuro.</span>
-            <button className="itensHovered btnOutline btnDefault">Continuar</button>
-        </section>
+                    <Link to="/signup"> 
+                        <button className="itensHovered btnOutline btnDefault">Continuar</button>
+                    </Link>
 
-    </div>
-    
+                </section>
+
+            </div>
+
         );
     }
 }
