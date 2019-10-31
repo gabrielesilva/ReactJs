@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
+
 export default class Index extends Component {
     render() {
         return (

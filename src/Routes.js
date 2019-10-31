@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import Home from './pages/home';
-import Signup from './pages/Signup';
-import HomNotFound from './pages/NotFoud';
+import Signup from './pages/signup';
+import NotFound from './pages/not-found';
+
 export default class Routes extends Component {
     render() {
         return (
